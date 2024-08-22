@@ -1,0 +1,25 @@
+/* 内嵌的推文 */
+.twitter-tweet {
+  margin: 10px auto;
+}
+
+:root {
+  --vp-c-text-10: #656973;
+  --vp-c-text-11: #000000;
+  --vp-c-bg-10: #eff2f5;
+}
+.dark {
+  --vp-c-text-10: #dedfe3;
+  --vp-c-text-11: #ffffff;
+  --vp-c-bg-10: #22272e;
+}
+
+/* 左边菜单-分组标题 */
+.nav .VPSidebarItem .item h2.text {
+  font-size: 13px;
+}
+
+@font-face {
+  font-family: number;
+  src: url(https://srd.e-jt.cn/static/fonts/SFUDINENGSCHRIFT.TTF);
+}

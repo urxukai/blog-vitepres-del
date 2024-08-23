@@ -5,7 +5,7 @@ description: Solayer 正在 Solana 上构建再质押网络。Solayer 利用其�
 
 <PageHeader
   logo="/images/solayer/logo.png"
-  coverImg="/images/solayer/cover.jpeg"
+  coverImg="/images/solayer/cover.png"
   :links="links"
 />
 

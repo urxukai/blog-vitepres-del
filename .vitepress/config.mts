@@ -11,7 +11,7 @@ export default defineConfig({
   title: '小满即安Pro',
   description: '小满即安Pro',
   base: '/',
-  cleanUrls: true, // 设置为true可以 从 URL 中删除 .html 后缀
+  cleanUrls: false, // 设置为true可以 从 URL 中删除 .html 后缀
   vite: {
     server: {
       proxy: {

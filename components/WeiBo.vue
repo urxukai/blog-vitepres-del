@@ -161,7 +161,8 @@ const onPreviewImg = () => {}
 }
 .pic-box .pic-item {
   width: 100%;
-  height: 132px;
+  /* height: 132px; */
+  aspect-ratio: 1 / 1;
   border-radius: 8px;
   object-fit: cover;
 }

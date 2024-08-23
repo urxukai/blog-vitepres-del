@@ -55,7 +55,8 @@ const linksIconMap = {
 .coverImg {
   margin-bottom: 20px;
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
+  aspect-ratio: 3 / 1;
   object-fit: cover;
 }
 .logoIcon {

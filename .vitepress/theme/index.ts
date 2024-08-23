@@ -5,6 +5,11 @@ import DefaultTheme from 'vitepress/theme-without-fonts'
 import './style.css'
 import './common.css'
 
+// element
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
+// 组件
 import PageHeader from '../../components/PageHeader.vue'
 import WeiBo from '../../components/WeiBo.vue'
 import CoinModel from '../../components/CoinModel.vue'
@@ -17,6 +22,8 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
+    app.use(ElementPlus)
+
     // 注册自定义全局组件
     app.component('PageHeader', PageHeader)
     app.component('WeiBo', WeiBo)

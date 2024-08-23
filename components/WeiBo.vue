@@ -26,24 +26,32 @@
       <section class="weibo-content" v-html="weiboData.long_text_source || weiboData.text"></section>
 
       <div class="pic-box">
-        <img v-for="(pic, key) in weiboData.pic_infos" :src="`/images/weibo/${picPrefix}/${key}.jpg`" alt="" class="pic-item" @click="onPreviewImg" />
+        <el-image
+          v-for="(pic, key) in weiboData.pic_infos"
+          :src="`/images/weibo/${picPrefix}/${key}.jpg`"
+          :preview-src-list="[`/images/weibo/${picPrefix}/${key}.jpg`]"
+          alt=""
+          lazy
+          class="pic-item"
+          @click="onPreviewImg"
+        />
       </div>
     </div>
 
     <!-- 底部 -->
     <footer class="weibo-footer">
       <div class="footer-item" @click="onShare">
-        <img src="/images/weibo/share.png" alt="" class="footer-icon" />
+        <el-image src="/images/weibo/share.png" alt="" class="footer-icon" />
         <span>{{ weiboData.reposts_count }}</span>
       </div>
 
       <div class="footer-item">
-        <img src="/images/weibo/comment.png" alt="" class="footer-icon" />
+        <el-image src="/images/weibo/comment.png" alt="" class="footer-icon" />
         <span>{{ weiboData.comments_count }}</span>
       </div>
 
       <div class="footer-item">
-        <img src="/images/weibo/like.png" alt="" class="footer-icon" />
+        <el-image src="/images/weibo/like.png" alt="" class="footer-icon" />
         <span>{{ weiboData.attitudes_count }}</span>
       </div>
     </footer>

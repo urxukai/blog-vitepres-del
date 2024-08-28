@@ -11,13 +11,16 @@ hero:
       text: Crypto
       link: /crypto/projects/solana/ionet
     - theme: alt
-      text: Front End
-      link: /frontend/vue/advanced/01
-# features:
-#   - title: Feature A
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature B
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature C
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: Develop
+      link: /develop/前端开发规范.md
+features:
+  - title: Feature A
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature B
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature C
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
+<!-- TODO -->
+<!-- 网页预览、视频网站地址预览 -->

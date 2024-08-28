@@ -23,3 +23,42 @@
   font-family: number;
   src: url(https://srd.e-jt.cn/static/fonts/SFUDINENGSCHRIFT.TTF);
 }
+
+/**
+ * 首页标题渐变动画
+ * -------------------------------------------------------------------------- */
+.VPContent .clip {
+  background: -webkit-linear-gradient(315deg, rgb(210, 86, 53) 10%, #41d1ff 50%, #bd34fe 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* https://www.iconfont.cn/fonts/detail?spm=a313x.fonts_index.i1.d9df05512.24963a81myBL5X&cnid=fXpbnNvHu1TN */
+/* @font-face {
+  font-family: 'Nabla Regular';
+  src: url('/font/ktL80j27XLC0/9C7vXKufVgtl.woff2') format('woff2'), url('/font/ktL80j27XLC0/9C7vXKufVgtl.woff') format('woff');
+  font-display: swap;
+} */
+
+li {
+  list-style-type: none;
+}
+.el-timeline li.el-timeline-item {
+  margin-top: 0;
+}

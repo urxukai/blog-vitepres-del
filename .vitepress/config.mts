@@ -5,11 +5,12 @@
  */
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar/index.ts'
+import { handleHeadMeta } from './utils/handleHeadMeta.ts' // Twitter的卡片预览
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: '小满即安Pro',
-  description: '小满即安Pro',
+  title: '小满即安',
+  description: '小满即安',
   base: '/',
   cleanUrls: false, // 设置为true可以 从 URL 中删除 .html 后缀
   vite: {
@@ -29,7 +30,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Crypto', link: '/crypto/projects/solana/ionet.md' },
-      { text: 'Front End', link: '/frontend/vue/advanced/01' },
+      { text: 'Develop', link: '/develop/前端开发规范.md' },
       { text: 'Weibo', link: '/weibo/2407-2408.md' },
       { text: 'Other', link: '/other/twitter.md' }
     ],
@@ -53,6 +54,9 @@ export default defineConfig({
     darkModeSwitchLabel: '主题',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式'
+  },
+  async transformHead(context) {
+    return handleHeadMeta(context)
   },
   async buildEnd(siteConfig) {
     console.log('构件结束的钩子')

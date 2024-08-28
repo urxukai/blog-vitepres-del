@@ -25,11 +25,12 @@
       <!-- 微博正文 -->
       <section class="weibo-content" v-html="weiboData.long_text_source || weiboData.text"></section>
 
+      <!-- 微博图片 -->
       <div class="pic-box">
         <el-image
           v-for="(pic, key) in weiboData.pic_infos"
-          :src="`/images/weibo/${picPrefix}/${key}.jpg`"
-          :preview-src-list="[`/images/weibo/${picPrefix}/${key}.jpg`]"
+          :src="`${staticUrl}/weibo/${picPrefix}/${key}.jpg`"
+          :preview-src-list="[`${staticUrl}/weibo/${picPrefix}/${key}.jpg`]"
           alt=""
           lazy
           class="pic-item"
@@ -71,6 +72,8 @@ const getCreateTime = computed(() => {
     return dayjs(time).format('MM-DD HH:MM')
   }
 })
+
+const staticUrl = 'https://static.onev.top/'
 
 const onPreviewImg = () => {}
 </script>

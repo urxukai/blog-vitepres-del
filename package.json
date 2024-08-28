@@ -5,11 +5,13 @@
   },
   "scripts": {
     "dev": "npm run docs:dev",
+    "build": "vitepress build",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "dayjs": "^1.11.12",
     "element-plus": "^2.8.0"
   }

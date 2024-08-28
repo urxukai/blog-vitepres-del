@@ -4,14 +4,14 @@
  * @Description:
  */
 import { test } from './test'
-import { frontend } from './frontend'
+import { develop } from './develop'
 import { crypto } from './crypto'
 import { weibo } from './weibo'
 import { other } from './other'
 
 export default {
   '/test/': test,
-  '/frontend/': frontend,
+  '/develop/': develop,
   '/crypto/': crypto,
   '/weibo/': weibo,
   '/other/': other

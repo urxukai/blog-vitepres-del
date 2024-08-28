@@ -19,6 +19,10 @@ description: Solana 生态中第一个可组合的生息资产与积分空投的
 - 第 2 季 (5 月 1 日 - 5 月 31 日) ： 7,500,000（750 万）
 - 第 3 季（6 月 1 日 - 6 月 30 日） ： 5,000,000（500 万）
 
+## 查看质押
+
+[查看质押](https://solscan.io/account/6Bb1M6pAT6ZQa5BvouMR87Z4PcLXAjLwehgP34Q6V1tZ#transfers)
+
 ## 挖矿收益计算（2024/7/9）
 
 |   单价   |   2.24   |  统计时间  |  2024/7/9  |                |                  |
@@ -37,6 +41,8 @@ const links = [
   { name: 'io.net', url: 'http://io.net' },
   { name: 'X', url: 'https://x.com/ionet' },
   { name: 'Doc', url: 'https://docs.io.net/docs/inception' },
+  { name: 'Claim', url: 'https://app.streamflow.finance/airdrop' },
+  { name: 'Foundation', url: 'https://iog.net/' },
   { name: 'Mint教程', url: 'https://mirror.xyz/maskpad.eth/1fyMaNu3LvVj0epOeLLCLXCn4V1IEmG562swGwBdBoAn' },
 ]
 const coinFinance = [

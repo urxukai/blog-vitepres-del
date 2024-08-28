@@ -2,16 +2,34 @@
 title: NX Finance($NX)
 description: Solana 生态中第一个可组合的生息资产与积分空投的杠杆收益聚合器，帮助用户解锁 Solana 生态中每个生息资产的潜在收益并为每个积分空投参与者提供适合自己的收益策，作为 Solana DeFi 生态中的收益层。
 outline: deep
-head:
-  - - script
-    - src: https://platform.twitter.com/widgets.js
 ---
+
+<!-- head:
+  - - script
+    - src: https://platform.twitter.com/widgets.js -->
 
 <PageHeader
   logo="/images/nxfinance/logo.png"
   coverImg="/images/nxfinance/cover.webp"
   :links="links"
 />
+
+## 时间线
+
+<el-timeline style="max-width: 600px">
+    <el-timeline-item
+      v-for="(activity, index) in activities"
+      :key="index"
+      :icon="activity.icon"
+      :type="activity.type"
+      :color="activity.color"
+      :size="activity.size"
+      :hollow="activity.hollow"
+      :timestamp="activity.timestamp"
+    >
+      {{ activity.content }}
+    </el-timeline-item>
+  </el-timeline>
 
 ## `IDO` IS COMING
 
@@ -72,16 +90,42 @@ IDO 期间筹集的资金将分配给以下领域，以支持 NX Finance 的增�
 
 - 预计日期：2024 年 9 月 9 日｜ 12:00PM UTC
 
-TGE 详情将另行发布，敬请关注进一步公告
-
 ![IDO](/images/nxfinance/nadventure.jpeg)
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/search?q=%24NX&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$NX</a> IDO is COMING<br><br>We’ve put everything into building a platform that redefines what’s possible in Solana<br><br>And now, we&#39;re about to enter the next phase of our PROMISE to community<br><br>This is the road to our extraordinary<br><br>In this post, we will list out all the details of IDO👇🏻 <a href="https://t.co/4mVIfj59c7">pic.twitter.com/4mVIfj59c7</a></p>&mdash; NX Finance ⚖️ (@NX_Finance) <a href="https://twitter.com/NX_Finance/status/1826945035604271273?ref_src=twsrc%5Etfw">August 23, 2024</a></blockquote>
 
 <script setup>
+import { MoreFilled } from '@element-plus/icons-vue'
+
 const links = [
   { name: 'nxfinance.io', url: 'https://nxfinance.io/' },
   { name: 'X', url: 'https://x.com/NX_Finance' },
-  { name: 'Doc', url: 'https://nx-finance.gitbook.io/nx-finance-whitepaper' },
+  { name: 'Gitbook', url: 'https://nx-finance.gitbook.io/nx-finance-whitepaper' },
+]
+const activities = [
+  {
+    content: '第 1 季代币分配',
+    timestamp: '2024 年 9 月 18 日 ',
+  },
+  {
+    content: '第 2 季开始',
+    timestamp: '2024 年 9 月 10 日',
+  },
+  {
+    content: '第 1 季快照​',
+    timestamp: '2024 年 9 月 9 日​',
+  },
+  {
+    content: '预售（公开轮）​',
+    timestamp: '2024 年 9 月 3 日｜ 12:00PM UTC​',
+  },
+  {
+    content: '预售（白名单轮）​',
+    timestamp: '2024 年 9 月 2 日｜ 12:00PM UTC​',
+  },
+  {
+    content: '最终 20% 提升',
+    timestamp: '2024 年 8 月 26 日 - 2024 年 9 月 9 日',
+  }
 ]
 </script>

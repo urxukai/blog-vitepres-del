@@ -1,49 +1,64 @@
 {
-  "hash": "a599ecc1",
+  "hash": "494592ed",
   "configHash": "34037def",
-  "lockfileHash": "d64cdf74",
-  "browserHash": "4900ea9e",
+  "lockfileHash": "3f475dd2",
+  "browserHash": "914622b2",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "acee2a56",
+      "fileHash": "aebc292d",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "25a350fa",
+      "fileHash": "0a6f2071",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "d4036a1d",
+      "fileHash": "25769d97",
       "needsInterop": false
     },
     "element-plus": {
       "src": "../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "2fc01af2",
+      "fileHash": "af27dbcc",
       "needsInterop": false
     },
     "dayjs": {
       "src": "../../../node_modules/dayjs/dayjs.min.js",
       "file": "dayjs.js",
-      "fileHash": "fefd98f4",
+      "fileHash": "3496b702",
       "needsInterop": true
+    },
+    "@amap/amap-jsapi-loader": {
+      "src": "../../../node_modules/@amap/amap-jsapi-loader/dist/index.js",
+      "file": "@amap_amap-jsapi-loader.js",
+      "fileHash": "1a7552fb",
+      "needsInterop": true
+    },
+    "@element-plus/icons-vue": {
+      "src": "../../../node_modules/@element-plus/icons-vue/dist/index.js",
+      "file": "@element-plus_icons-vue.js",
+      "fileHash": "c10c9eb4",
+      "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-4U4PW2YP": {
+      "file": "chunk-4U4PW2YP.js"
+    },
     "chunk-Z5MM7V3J": {
       "file": "chunk-Z5MM7V3J.js"
     },
-    "chunk-QUWJYKIQ": {
-      "file": "chunk-QUWJYKIQ.js"
-    },
     "chunk-FHCCNIS7": {
       "file": "chunk-FHCCNIS7.js"
+    },
+    "chunk-QUWJYKIQ": {
+      "file": "chunk-QUWJYKIQ.js"
     },
     "chunk-5WRI5ZAA": {
       "file": "chunk-5WRI5ZAA.js"

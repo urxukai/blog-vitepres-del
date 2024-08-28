@@ -47,7 +47,8 @@ const linksIconMap = {
   Blog: '/images/links/blog.png',
   Claim: '/images/links/airdrop.png',
   Discord: '/images/links/discord.png',
-  DApp: '/images/links/dapp.png'
+  DApp: '/images/links/dapp.png',
+  Gitbook: '/images/links/gitbook.png'
 }
 </script>
 
